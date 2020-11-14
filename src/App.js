@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from "./components/Nav";
+import Cards from "./components/Cards";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <h1>COVID19 DASHBOARD</h1>
+      <Cards />
     </div>
   );
 }
-
+//local_total_cases = infected
+//local_deaths = deaths
+//local_recovered = recovered
+//local_active_cases = hospitalized
 export default App;
